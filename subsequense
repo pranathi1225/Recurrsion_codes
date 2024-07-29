@@ -1,0 +1,21 @@
+public class Main
+{
+    public static void consi(String str,int d,String newString)
+    {
+        if(d==str.length())
+        {
+            System.out.println(newString);
+            return;
+        }
+        char currcar=str.charAt(d);
+        consi(str,d+1,newString+currcar);
+        consi(str,d+1,newString);
+        
+    }
+	public static void main(String[] args) {
+	    
+	    String s="abc";
+	    consi(s,0,"");
+	    
+	}
+}
