@@ -1,0 +1,20 @@
+public class Main
+{
+    public static void tower(String des,int d)
+    {
+        if(d==0)
+        {
+            System.out.println(des.charAt(d));
+            return;
+        }
+        System.out.print(des.charAt(d));
+        tower(des,d-1);
+        
+        
+        
+    }
+	public static void main(String[] args) {
+	    String s="sai";
+		tower(s,s.length()-1 );
+	}
+}
