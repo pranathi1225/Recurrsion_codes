@@ -1,0 +1,31 @@
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    
+	    
+	    String s="abadc";
+		StringBuilder sb=new StringBuilder(s.length());
+		        sb.append(s.charAt(0));
+		        	System.out.println(sb);
+		for(int i=1;i<s.length();i++)
+		{
+		    boolean f=true;
+		    for(int j=0;j<sb.length();j++)
+		    {
+		    if(sb.charAt(j)==s.charAt(i))
+		    {
+		      f=false;
+		      break;
+		    }
+		    
+		    }
+		  if(f)
+		  {
+		   sb.append(s.charAt(i));
+		  }
+		}
+		
+		System.out.print(sb);
+	}
+}
